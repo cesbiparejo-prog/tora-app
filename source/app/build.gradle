@@ -1,0 +1,12 @@
+plugins { id 'com.android.application' }
+def kp = new File(rootDir, '../.keystore-password').text.trim()
+android {
+  namespace 'com.dani.tshuva'
+  compileSdk 34
+  defaultConfig { applicationId 'com.dani.tshuva'; minSdk 26; targetSdk 34; versionCode 8; versionName '1.7' }
+  signingConfigs { dani { storeFile file('../../tshuva-release.keystore'); storePassword kp; keyAlias 'tshuva'; keyPassword kp } }
+  buildTypes { release { minifyEnabled false; signingConfig signingConfigs.dani } }
+  compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+  testOptions { unitTests.returnDefaultValues = true }
+}
+dependencies { testImplementation 'junit:junit:4.13.2'; testImplementation 'org.json:json:20231013' }

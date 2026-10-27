@@ -1,0 +1,22 @@
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,sans-serif;background:#faf6ee;color:#222}
+header{position:sticky;top:0;background:#3b2a1a;color:#fff;padding:8px 12px;z-index:5;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+h1{font-size:1.2em;margin:0 8px 0 0}header select,header input,header button{font-size:16px;padding:5px;border-radius:6px;border:0}
+.opts label{margin-right:8px;white-space:nowrap}.tools{display:flex;gap:4px;flex:1;min-width:260px}.tools input{flex:1}
+main{max-width:1200px;margin:auto;padding:12px}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:16px;border-bottom:1px solid #e4dccb;padding:8px 0}
+.he{font-family:"SBL Hebrew","Ezra SIL","Times New Roman",serif;font-size:1.45em;direction:rtl;text-align:right;line-height:1.7}
+.rv{line-height:1.6;font-size:1.05em}.n{color:#a0522d;font-weight:bold;font-size:.8em;margin:0 4px}
+.hw{cursor:pointer}.hw:hover{background:#f3e2b5}
+.il{display:flex;flex-wrap:wrap;direction:rtl;gap:6px;margin:6px 0}
+.w{border:1px solid #ddd0b4;background:#fff;border-radius:6px;padding:4px 6px;text-align:center;cursor:pointer;min-width:70px}
+.w .h{font-family:"SBL Hebrew",serif;font-size:1.4em}.w small{display:block;direction:ltr;color:#555}.w .s{color:#a0522d}.w .g{color:#1a4d8f;font-weight:600}
+details{border-bottom:1px solid #e4dccb;padding:6px 0}summary{cursor:pointer}
+aside{position:fixed;right:0;top:0;bottom:0;width:min(420px,100%);background:#fff;box-shadow:-2px 0 10px #0004;padding:12px;overflow:auto;z-index:10}
+aside input{width:85%;font-size:16px;padding:6px}.close{float:right;font-size:18px}
+.ent{border-bottom:1px solid #eee;padding:8px 0}.ent .lm{font-size:1.6em;font-family:"SBL Hebrew",serif}.tag{font-size:.8em;color:#777}
+footer{font-size:.75em;color:#666;padding:16px;text-align:center}
+.hit{padding:6px 0;border-bottom:1px solid #eee;cursor:pointer}mark{background:#ffe58a}
+@media(max-width:700px){.vs{grid-template-columns:1fr;gap:4px}h1{font-size:1em}.he{font-size:1.3em}.w{min-width:60px}.opts{font-size:.9em}}
+header button,header select{min-height:40px;min-width:40px}.opts label{display:inline-flex;align-items:center;min-height:36px}.opts input{width:20px;height:20px}
+.hw{padding:2px 1px;border-radius:4px}.w{min-height:44px}.hit{padding:10px 0}aside .close{min-width:44px;min-height:44px}
+@media(max-width:700px){aside{width:100%}}

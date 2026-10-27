@@ -1,0 +1,16 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Torá Estudio — Hebreo · RV1909 · Interlineal</title><link rel="stylesheet" href="style.css"><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#3b2a1a"><link rel="apple-touch-icon" href="icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"></head><body>
+<header><h1>📜 Torá Estudio</h1>
+<div class="nav"><select id="book"></select><select id="chap"></select>
+<button id="prev">◀</button><button id="next">▶</button></div>
+<div class="opts"><label><input type="radio" name="mode" value="par" checked> Comparada</label>
+<label><input type="radio" name="mode" value="int"> Interlineal</label>
+<label><input type="radio" name="mode" value="rv"> Solo RV1909</label>
+<label><input type="checkbox" id="names"> Nombres hebreos</label></div>
+<div class="tools"><input id="q" placeholder="Buscar en la Torá (español, hebreo o H430)"><button id="go">Buscar</button>
+<button id="dictbtn">📖 Diccionario</button></div></header>
+<main id="main"></main>
+<aside id="dict" hidden><button class="close" id="dclose">✕</button>
+<input id="dq" placeholder="Buscar: H7225, אלהים, elohim, principio…"><div id="dres"></div></aside>
+<footer>Texto hebreo: WLC/OpenScriptures Hebrew Bible (CC BY 4.0) · Reina-Valera 1909 (dominio público, eBible.org) · Léxico Strong (dominio público; JSON © Open Scriptures CC BY-SA). Glosas españolas derivadas automáticamente de la RV1909.</footer>
+<script src="app.js"></script></body></html>

@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+  <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+  <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+  <queries>
+    <intent><action android:name="android.speech.RecognitionService"/></intent>
+    <intent><action android:name="android.intent.action.DIAL"/></intent>
+  </queries>
+  <application android:label="Afinador" android:allowBackup="false" android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher_round" android:theme="@android:style/Theme.Material.Light.DarkActionBar">
+    <activity android:name=".MainActivity" android:exported="true" android:label="Afinador">
+      <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+    </activity>
+    <activity android:name=".ChatActivity" android:label="Hablar con el guía" android:windowSoftInputMode="adjustResize"/>
+    <activity android:name=".SosActivity" android:label="SOS – Respira"/>
+    <activity android:name=".JournalActivity" android:label="Mi diario" android:windowSoftInputMode="adjustResize"/>
+    <activity android:name=".SettingsActivity" android:label="Ajustes"/>
+    <activity android:name=".LockActivity" android:label="Afinador" android:windowSoftInputMode="stateVisible"/>
+    <receiver android:name=".DailyReceiver" android:exported="false"/>
+    <receiver android:name=".BootReceiver" android:exported="true">
+      <intent-filter><action android:name="android.intent.action.BOOT_COMPLETED"/></intent-filter>
+    </receiver>
+  </application>
+</manifest>
